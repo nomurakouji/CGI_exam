@@ -1,6 +1,6 @@
 require 'webrick'
 server = WEBrick::HTTPServer.new({
-  :DocumentRoot => '.',
+  :DocumentRoot => 'http://localhost:2000/exam',
   :CGIInterpreter => WEBrick::HTTPServlet::CGIHandler::Ruby,
   :Port => '2000',
 })
